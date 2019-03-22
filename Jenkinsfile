@@ -1,5 +1,5 @@
 pipeline {
-    agents any
+    agent any
     stage('Stage One'){
         steps{
             echo 'Stage 01'
