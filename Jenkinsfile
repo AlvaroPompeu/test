@@ -9,7 +9,7 @@ pipeline {
         }    
         stage('Stage Two'){
             steps{
-                echo 'Stage 02'
+                sh './scropt.sh'
             }
         }
     }
