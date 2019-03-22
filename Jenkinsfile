@@ -6,10 +6,10 @@ pipeline {
             steps{
                 echo 'Stage 01'
             }
-            
+        }    
         stage('Stage Two'){
             steps{
-                echo 'Stage  02'
+                echo 'Stage 02'
             }
         }
     }
