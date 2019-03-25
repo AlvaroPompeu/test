@@ -1,15 +1,12 @@
 pipeline {
     agent any
-    
-    stages{
-        stage('Stage One'){
-            steps{
-                echo 'Stage 01'
-            }
-        }    
-        stage('Stage Two'){
-            steps{
-                sh './scropt.sh'
+    parameters {
+	string(name: 'ID', defaultValue: '01', description: 'foo')
+    }
+    stages {
+        stage('Test') {
+            steps {
+                sh "mkdir ${params.ID}"
             }
         }
     }
